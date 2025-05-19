@@ -1,18 +1,3 @@
-# Regras:
-
-# Use um dicionário onde a chave é o título do livro e o valor é outro dicionário com autor, ano e status (disponível ou emprestado).
-
-# Crie funções:
-
-# adicionar_livro()
-
-# emprestar_livro()
-
-# devolver_livro()
-
-# mostrar_acervo()
-
-# Permita interatividade em loop até o usuário decidir sair.
 import os
 
 
@@ -225,20 +210,3 @@ def menu_biblioteca():
 
 
 menu_biblioteca()
-
-# mostrar_acervo()
-
-# analise_de_livros()
-# print(livros_emprestados)
-# devolver_livros()
-# print(livros_emprestados)
-
-# ----------Eu fiz isso-----------
-# for livro in livros.items():
-
-#     if list(list(livro)[1].values())[2] == 'Disponível':
-
-# ----------podendo ter feito isso -------
-# for livro, info in livros.items():
-
-#     print(info['status'])
