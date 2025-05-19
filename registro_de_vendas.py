@@ -13,7 +13,8 @@ def limpar_tela():
 # ------------------------------ cadastrar_produtos -------------------------
 
 def cadastrar_produtos():
-    while True:
+
+    while True:      
         limpar_tela()
         print('-- Realizando Cadastro de Produto --')
 
@@ -26,8 +27,10 @@ def cadastrar_produtos():
 
                 if cancelar == 'S':
                     break
+
                 elif cancelar == 'N':
                     return
+                
                 else: 
                     continue
             continue
@@ -47,8 +50,10 @@ def cadastrar_produtos():
 
             if continuar == 'S':
                 break
+
             elif continuar == 'N':
                 return
+            
             else:
                 print('nao entendi, quer registrar mais produtos? [S/N]')
                 continue
@@ -63,17 +68,22 @@ def realizar_venda():
         limpar_tela()
 
         print('-- produtos disponíveis --')
+
         for produto, preco in produtos.items():
             print(f'{produto} - R${preco:.2f}')
 
         produto_desejado = input('escreva o nome do produto desejado: ')
+
         if produto_desejado == '':
             while True:
                 continuar = input('Valor não reconhecido, realizar alguma venda? [S/N]').strip().upper()[0]
+
                 if continuar == 'S':
                     break
+
                 elif continuar == 'N':
                     return
+                
                 else:
                     continue
             continue
@@ -85,6 +95,7 @@ def realizar_venda():
                 quantidade = int(input('Quantos deseja?'))
                 total_do_produto = produtos[produto_desejado] * quantidade
                 vendas[produto_desejado] = quantidade, total_do_produto
+
             except ValueError:
                 print('Valor inválido, refaça por favor')
                 sleep(2)
@@ -92,10 +103,13 @@ def realizar_venda():
 
             while True:
                 continuar = input('Quer comprar mais alguma coisa? \n').upper().strip()[0]
+
                 if continuar == 'S':
                     break
+
                 elif continuar == 'N':
                     return
+                
                 else:
                     continue
             continue

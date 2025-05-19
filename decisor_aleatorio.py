@@ -6,19 +6,24 @@ def indecisao():
     os.system('cls')
     print('Olá, aqui vou te ajudar a tomar decisões')
     duvida = []
+    
     while True:
 
         coisa = input('Digite aqui as opções: \n').upper().strip()
+
         if coisa == '':
             vazio = input('Vazio mesmo? [S][N]')
+
             if vazio[0] == 'S':
                 print('Tudo bem')
+
             elif vazio[0] == 'N':
                 print('beleza então, escolha o novo valor')
                 coisa = input('Digite aqui: ')
         duvida.append(coisa)
 
         if len(duvida) >= 2:
+
             while True:
                 continuar = input('Deseja continuar?[S][N] ').strip().upper()
 

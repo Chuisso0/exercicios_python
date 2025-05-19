@@ -5,6 +5,7 @@ numero_tentativas = 0
 letra_secreta = ''
 
 os.system('cls')
+
 while True:
     letra_user = input('Digite uma letra: ')
     numero_tentativas += 1
@@ -17,6 +18,7 @@ while True:
         letra_secreta += letra_user
 
     palavra_correta = ''
+
     for letra in palavra_secreta:
         
         if letra in letra_secreta:
@@ -25,6 +27,7 @@ while True:
         else:
             palavra_correta += '*'
     print(palavra_correta)
+    
     if palavra_correta == palavra_secreta:
         os.system('cls')
         print(f'GANHOU!!! PARABENS!!')

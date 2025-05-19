@@ -4,6 +4,7 @@ aluno = {}
 
 
 def cadastrar_aluno():
+    
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         nome = input('Qual o nome do aluno?\n')

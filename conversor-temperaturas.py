@@ -1,4 +1,3 @@
-
 print('='*50)
 print('Olá , Bem vindo ao nosso conversor de temperatura hhehe')
 print('De qual escala deseja converter? \n'
